@@ -141,6 +141,26 @@ select {
   font-size: 1em;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    font-size:25px;
+}
+
+/*input[type="checkbox"] {
+    vertical-align:middle;
+}*/
+
+/*input[type='checkbox'] {
+  float: left;
+  width: 20%;
+}
+
+input[type='checkbox'] + label {
+  display: inline-block;
+  width: 30%;
+}*/
+
 textarea {
   background: #eff0f1;
   border-radius: 3px;
