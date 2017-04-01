@@ -151,8 +151,9 @@ Base Layout Styles
 .contact-info input,
 .contact-info select {
   background: #f7f8f9;
-  border-style: none;
-  border-radius: 3px;
+  border: 2px solid transparent;
+  transition: ease-in-out .3s;
+  border-radius: 5px;
   width: 100%;
   padding: .75em;
   margin-top: .5em;
@@ -196,24 +197,19 @@ Base Layout Styles
 /******* Focus States *******/
 
 input:focus,
-select:focus,
 textarea:focus,
-button:focus {
-    outline: none;
-}
-
-input:focus,
-textarea:focus {
+select:focus {
   border: 2px solid #4ebbb5;
-  transition: ease-out .1s;
+  outline: none;
 }
 
 input:hover,
-textarea:hover {
-  border: 1px solid #4ebbb5;
+textarea:hover,
+select:hover {
+  border: 2px solid #4ebbb5;
   background: #fff;
   color: #4ebbb5;
-  transition: ease-out .1s;
+
 }
 
 button:hover {
